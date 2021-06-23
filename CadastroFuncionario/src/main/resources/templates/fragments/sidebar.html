@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+			<nav class="sidebar sidebar-open" th:fragment="nav-sidebar">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a class="nav-link " th:href="@{/}"> <i
+							class="oi oi-home"></i> <span>HOME</span>
+					</a></li>
+				</ul>
+
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active" >Sala do Café</span></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/salaDoCafe/cadastrar}"> <i class="oi oi-plus"></i> 
+						<span>Cadastrar</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						th:href="@{/salaDoCafe/listar}"> <i class="oi oi-spreadsheet"></i>
+							<span>Listar </span>
+					</a></li>
+				</ul>
+
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active" >Sala Treinamento</span></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/salaTreinamento/cadastrar}"> <i class="oi oi-plus"></i> 
+						<span>Cadastrar </span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/salaTreinamento/listar}"> <i
+							class="oi oi-spreadsheet"></i> 
+							<span>Listar </span>
+					</a></li>
+				</ul>
+
+				<ul class="nav nav-pills">
+					<li class="nav-item"><span class="nav-link active">Alunos</span></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/mapalunos/cadastrar}"> <i class="oi oi-plus"></i> 
+						<span>Cadastrar </span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" 
+						th:href="@{/mapalunos/listar}"> <i class="oi oi-spreadsheet"></i> 
+						<span>Listar </span>
+					</a></li>
+				</ul>
+			</nav>
+</body>
+</html>
